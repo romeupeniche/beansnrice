@@ -5,7 +5,7 @@ import { useState } from "react";
 import ResponsiveHeader from "./ResponsiveHeader";
 
 const Header = () => {
-  const [isRespMenu, setIsRespMenu] = useState(true);
+  const [isRespMenu, setIsRespMenu] = useState(false);
   const toggleMenuHandler = () => {
     setIsRespMenu((prev) => !prev);
   };

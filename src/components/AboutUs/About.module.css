@@ -30,6 +30,15 @@
   border-radius: 50%;
 }
 
+.title {
+  margin: 0;
+  margin-top: 10vh;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--blue-color);
+}
+
 @media (max-width: 1200px) {
   .chief {
     margin-right: 4.2vw;
