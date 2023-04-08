@@ -1,0 +1,46 @@
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  color: black;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  transition: 200ms;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+.button:hover,
+.button:active {
+  transform: scale(1.02);
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.button:hover .icon {
+  color: white;
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+.badge {
+  background-color: var(--light-blue-color);
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.button:hover .badge,
+.button:active .badge {
+  transform: scale(1.02);
+}

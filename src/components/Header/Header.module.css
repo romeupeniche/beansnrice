@@ -1,0 +1,63 @@
+.header {
+  overflow-x: hidden;
+  height: 98vh;
+}
+
+.title {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1 {
+  font-size: 6rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+.menu-icon {
+  width: 50px;
+  margin: 30px 30px 0 0;
+  cursor: pointer;
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  list-style: none;
+}
+
+.navigation a {
+  margin: 1rem;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .title h1 {
+    font-size: 15vw;
+    font-family: "Kaushan Script", cursive;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .header nav {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+}
