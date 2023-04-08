@@ -5,7 +5,7 @@ import { mealsActions } from "../../../store/meals-slice";
 import { useState } from "react";
 
 const isNotEmpty = (value) => value.trim() !== "";
-const isEmail = (value) => value.includes("@");
+const isEmail = (value) => value.includes("@") && value.includes(".");
 
 const CartForm = (props) => {
   const dispatch = useDispatch();
@@ -88,10 +88,10 @@ const CartForm = (props) => {
             )}
           </div>
           <div className={addressClasses}>
-            <label htmlFor="name">Address</label>
+            <label htmlFor="address">Address</label>
             <input
               type="text"
-              id="name"
+              id="address"
               value={addressValue}
               onChange={addressChangeHandler}
               onBlur={addressBlurHandler}
@@ -101,10 +101,10 @@ const CartForm = (props) => {
             )}
           </div>
           <div className={emailClasses}>
-            <label htmlFor="name">E-Mail Address</label>
+            <label htmlFor="email">E-Mail Address</label>
             <input
-              type="text"
-              id="name"
+              type="email"
+              id="email"
               value={emailValue}
               onChange={emailChangeHandler}
               onBlur={emailBlurHandler}
