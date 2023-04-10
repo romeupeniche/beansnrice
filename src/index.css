@@ -3,6 +3,7 @@
 :root {
   --blue-color: #0e1b4d;
   --light-blue-color: #2844b4;
+  --lighter-blue-color: #327bdb;
 }
 
 ::-webkit-scrollbar {
@@ -10,7 +11,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #327bdb;
+  background-color: var(--lighter-blue-color);
   border-radius: 5px;
 }
 
