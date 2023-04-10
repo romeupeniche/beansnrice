@@ -34,6 +34,8 @@
 
 .navigation li {
   transition: 200ms;
+  text-align: center;
+  display: flex;
 }
 
 .navigation li:not(:last-child) {
@@ -47,7 +49,7 @@
 
 .navigation a,
 .navigation a:visited {
-  margin: 1rem;
+  padding: 1rem;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
