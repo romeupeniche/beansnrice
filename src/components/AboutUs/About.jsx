@@ -5,8 +5,10 @@ const About = () => {
   return (
     <>
       <Parallax className={styles.parallax}>With the best chiefs</Parallax>
-      <h1 className={styles.title}>About Us</h1>
-      <section id="about" className={styles.about}>
+      <h1 className={styles.title} id="about">
+        About Us
+      </h1>
+      <section className={styles.about}>
         <div className={styles.chief}>
           <img
             src="https://images.unsplash.com/photo-1618862633131-289f00c6a09e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"

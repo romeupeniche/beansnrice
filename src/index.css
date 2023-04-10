@@ -5,6 +5,15 @@
   --light-blue-color: #2844b4;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #327bdb;
+  border-radius: 5px;
+}
+
 html {
   scroll-behavior: smooth;
 }

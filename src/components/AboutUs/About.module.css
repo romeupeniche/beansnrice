@@ -32,7 +32,7 @@
 
 .title {
   margin: 0;
-  margin-top: 10vh;
+  padding-top: 10vh;
   text-align: center;
   font-size: 3rem;
   font-family: "Montserrat", sans-serif;
