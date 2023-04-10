@@ -17,7 +17,6 @@ const MealsList = () => {
         throw new Error("macaco");
       }
       const data = await response.json();
-      console.log(data);
 
       let loadedMeals = [];
       for (const key in data) {

@@ -12,12 +12,12 @@ const CartForm = (props) => {
   const [formIsSent, setFormIsSent] = useState();
 
   const [
-    firstNameValue,
-    firstNameIsValid,
-    firstNameHasError,
-    firstNameChangeHandler,
-    firstNameBlurHandler,
-    resetFirstName,
+    fullNameValue,
+    fullNameIsValid,
+    fullNameHasError,
+    fullNameChangeHandler,
+    fullNameBlurHandler,
+    resetFullName,
   ] = useInput(isNotEmpty);
   const [
     addressValue,
@@ -38,7 +38,7 @@ const CartForm = (props) => {
 
   let formIsValid = false;
 
-  if (firstNameIsValid && addressIsValid && emailIsValid) {
+  if (fullNameIsValid && addressIsValid && emailIsValid) {
     formIsValid = true;
   }
 
@@ -53,14 +53,14 @@ const CartForm = (props) => {
 
     dispatch(mealsActions.reset());
 
-    resetFirstName();
+    resetFullName();
     resetAddress();
     resetEmail();
 
     setFormIsSent(true);
   };
 
-  const firstNameClasses = firstNameHasError
+  const fullNameClasses = fullNameHasError
     ? `${styles["form-control"]} ${styles.invalid}`
     : styles["form-control"];
   const addressClasses = addressHasError
@@ -74,17 +74,19 @@ const CartForm = (props) => {
     <>
       {!formIsSent && (
         <form onSubmit={submitHandler}>
-          <div className={firstNameClasses}>
-            <label htmlFor="name">First Name</label>
+          <div className={fullNameClasses}>
+            <label htmlFor="name">Full Name</label>
             <input
               type="text"
               id="name"
-              value={firstNameValue}
-              onChange={firstNameChangeHandler}
-              onBlur={firstNameBlurHandler}
+              value={fullNameValue}
+              onChange={fullNameChangeHandler}
+              onBlur={fullNameBlurHandler}
             />
-            {firstNameHasError && (
-              <p className={styles["error-text"]}>Please enter a first name.</p>
+            {fullNameHasError && (
+              <p className={styles["error-text"]}>
+                Please enter your full name.
+              </p>
             )}
           </div>
           <div className={addressClasses}>

@@ -11,13 +11,12 @@ const CartButton = (props) => {
     dispatch(cartActions.toggle());
   };
 
-  const buttonClasses = props.className ?? "";
+  const buttonClasses = props.className
+    ? `${styles.button} ${props.className}`
+    : styles.button;
 
   return (
-    <button
-      className={`${styles.button} ${buttonClasses}`}
-      onClick={closeCartHandler}
-    >
+    <button className={buttonClasses} onClick={closeCartHandler}>
       <span className={styles.icon}>
         <CartIcon />
       </span>

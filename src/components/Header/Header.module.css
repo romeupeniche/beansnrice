@@ -32,9 +32,17 @@
   z-index: 10;
 }
 
+.navigation li {
+  transition: 200ms;
+}
+
 .navigation li:not(:last-child) {
-  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation.title-isnt-visible li {
+  opacity: 0.2;
 }
 
 .navigation a,
@@ -51,15 +59,13 @@
   margin-left: 50px;
 }
 
+.navigation li:hover {
+  opacity: 1;
+}
+
 .navigation a:hover {
   text-decoration: underline;
 }
-
-/* @media (max-width: 1150px) {
-  .navigation a {
-    font-size: 1.6vw;
-  }
-} */
 
 @media (max-width: 640px) {
   .title h1 {

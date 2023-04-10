@@ -8,11 +8,11 @@ const MenuIcon = (props) => {
     >
       <g
         fill="currentColor"
-        fill-rule="evenodd"
+        fillRule="evenodd"
         stroke="#000"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         transform="translate(1 1)"
       >
         <path d="M0 6h18M0 0h18M0 12h18" />
